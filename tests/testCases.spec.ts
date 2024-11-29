@@ -17,6 +17,7 @@ test.describe("Asana Tests", () => {
             //Login to the Asana product
             await loginPage.navigateTo(config.url);
             await loginPage.login(config.email!, config.password!);
+            await homePage.HomeLink().waitFor({ state: "visible" });
 
             //Navigate to the specific Project's Board
             await homePage.navigateToBoard(board);
