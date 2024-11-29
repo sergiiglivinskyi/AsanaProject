@@ -2,7 +2,9 @@
   "name": "asanaproject",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "e2e:board": "npx playwright test --project=chromium --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
